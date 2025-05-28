@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1748377120678,
+    "username": "paulomontefusco.junior@gmail.com",
+    "password": "$2b$10$Bba9sB0Ff25dAIXt0nJN5.eKXLDc1S.t.lXbkQYtdowkelttZKMMu"
+  },
+  {
+    "id": 1748377183119,
+    "username": "contato@eternus.com.br",
+    "password": "$2b$10$eEpu2KxHUoST/SApE8se2OPZKmYOQyAr73oMrXRRPpC69SB/Zc3R."
+  },
+  {
+    "id": 1748382265417,
+    "username": "giovannaevo@gmail.com",
+    "password": "$2b$10$ojvol5RzVZeJ3Y9hK4QIYOBStiLQ0TqwYy8agUH8c/ruBCyMfSyyq"
+  },
+  {
+    "id": 1748395131736,
+    "username": "teste@teste.com.br",
+    "password": "$2b$10$aHO/bb0JO4KK6gsbRrlo.OthV8lmOXxJeZSnFrHTFIqVx5XjKpi8y",
+    "fullName": "Paulo Teste",
+    "cpf": "411.221.598-38",
+    "birthDate": "08/01/1998"
+  }
+]
