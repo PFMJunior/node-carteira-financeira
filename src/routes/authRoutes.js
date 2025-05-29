@@ -13,10 +13,10 @@ router.post('/register', async (req, res) => {
     const { username, password, fullName, cpf, birthDate } = req.body;
 
     if (!username || !password || !fullName || !cpf || !birthDate) {
-        return res.status(400).json({ message: 'Todos os campos são obrigatórios para o cadastro.' });
+        return res.status(400).json({ message: 'Nome de usuário, senha, nome completo, CPF e data de nascimento são obrigatórios.' });
     }
 
-    const users = userModel.readUsers();
+    const users = readUsers();
     const existingUser = users.find(u => u.username === username);
 
     if (existingUser) {
@@ -26,16 +26,22 @@ router.post('/register', async (req, res) => {
     try {
         const hashedPassword = await bcrypt.hash(password, 10);
         const newUser = {
-            id: Date.now(),
+            id: Date.now(), // Usar Date.now() para um ID simples
             username,
             password: hashedPassword,
             fullName,
             cpf,
-            birthDate
+            birthDate,
+            balance: 0.00, // Novo campo: saldo inicial do usuário
+            accountNumber: userModel.generateAccountNumber(users) // Novo campo: número da conta
         };
         users.push(newUser);
-        userModel.writeUsers(users);
-        res.status(201).json({ message: 'Usuário cadastrado com sucesso!', userId: newUser.id });
+        writeUsers(users);
+        res.status(201).json({
+            message: 'Usuário cadastrado com sucesso!',
+            userId: newUser.id,
+            accountNumber: newUser.accountNumber
+        });
     } catch (error) {
         console.error('Erro ao cadastrar usuário:', error);
         res.status(500).json({ message: 'Erro interno do servidor ao cadastrar usuário.' });
