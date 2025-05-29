@@ -21,5 +21,53 @@
     "fullName": "Paulo Teste",
     "cpf": "411.221.598-38",
     "birthDate": "08/01/1998"
+  },
+  {
+    "id": 1748458666186,
+    "username": "paulinho@teste.com.br",
+    "password": "$2b$10$w629Rl1WKREEMd0sYpCIgum2eippCX5Iu8MiRiaOjUAofVcBDOCF6",
+    "fullName": "Paulo Fernando",
+    "cpf": "456.789.546-12",
+    "birthDate": "08/01/1998",
+    "balance": 0
+  },
+  {
+    "id": 1748459046595,
+    "username": "teste@dois.com.br",
+    "password": "$2b$10$NgOfz/CrLuY2MUFBz4gZBe4pE3QE1OVYhTba5K/NvpJxpxCSmWzxm",
+    "fullName": "Teste dois",
+    "cpf": "454.616.186-18",
+    "birthDate": "13/16/5161",
+    "balance": 0
+  },
+  {
+    "id": 1748459107033,
+    "username": "teste@tres.com.br",
+    "password": "$2b$10$bT/35uM9vIXO.mC89Oe8/OWWHO44nqRj/dWmJaXG4DI5yzWun3GGW",
+    "fullName": "Teste tres",
+    "cpf": "123.454.646-54",
+    "birthDate": "01/08/1998",
+    "balance": 460.20000000000005,
+    "accountNumber": 1936
+  },
+  {
+    "id": 1748490630093,
+    "username": "teste@paulo.com.br",
+    "password": "$2b$10$55LeAW7QWWKlKbIVxbgstuzjsE8UANjxCMihyGj80.z9hG7QlAR4C",
+    "fullName": "Teste Paulo",
+    "cpf": "123.456.789-78",
+    "birthDate": "08/01/1998",
+    "balance": 400,
+    "accountNumber": 8737
+  },
+  {
+    "id": 1748521595482,
+    "username": "teste@quatro.com.br",
+    "password": "$2b$10$SZgFXqzkbs2H/kiKVufoA.FH4n8yLfwhDq/cvzamER2qzcltsm.nO",
+    "fullName": "Teste quatro",
+    "cpf": "111.111.111-11",
+    "birthDate": "11/11/1111",
+    "balance": 112.1,
+    "accountNumber": 6965
   }
 ]
