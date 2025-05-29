@@ -51,7 +51,7 @@
     "fullName": "Teste tres",
     "cpf": "123.454.646-54",
     "birthDate": "01/08/1998",
-    "balance": 710.2,
+    "balance": 730.2,
     "accountNumber": 1936
   },
   {
@@ -61,7 +61,7 @@
     "fullName": "Teste Paulo",
     "cpf": "123.456.789-78",
     "birthDate": "08/01/1998",
-    "balance": 450,
+    "balance": 461,
     "accountNumber": 8737
   },
   {
@@ -119,7 +119,7 @@
     "fullName": "thais gomes ",
     "cpf": "324.310.928-01",
     "birthDate": "15/07/1985",
-    "balance": 0,
+    "balance": 119,
     "accountNumber": 7191
   }
 ]
