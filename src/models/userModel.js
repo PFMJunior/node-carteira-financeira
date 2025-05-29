@@ -24,7 +24,19 @@ const writeUsers = (users) => {
     }
 };
 
+// Função para gerar um número de conta único de até 4 dígitos
+const generateAccountNumber = (users) => {
+    let accountNumber;
+    let isUnique = false;
+    while (!isUnique) {
+        accountNumber = Math.floor(1000 + Math.random() * 9000); // Gera um número entre 1000 e 9999
+        isUnique = !users.some(u => u.accountNumber === accountNumber);
+    }
+    return accountNumber;
+};
+
 module.exports = {
     readUsers,
-    writeUsers
+    writeUsers,
+    generateAccountNumber
 };
